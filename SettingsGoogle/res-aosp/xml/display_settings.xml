@@ -130,6 +130,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/photos_pref">
+
+        <com.android.settings.custom.preference.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.gphotos"
+            android:title="@string/unlimited_photos_storage_title"
+            android:summary="@string/unlimited_photos_storage_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory
         android:title="@string/touch_category_title">
 
         <Preference
@@ -214,18 +224,6 @@
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
             android:defaultValue="false" />
-
-        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
-            android:key="wake_when_plugged_or_unplugged"
-            android:title="@string/wake_when_plugged_or_unplugged_title"
-            android:summary="@string/wake_when_plugged_or_unplugged_summary"
-            android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
-
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="proximity_on_wake"
-            android:title="@string/proximity_wake_title"
-            android:summary="@string/proximity_wake_summary"
-            android:defaultValue="@*lineageos.platform:bool/config_proximityCheckOnWakeEnabledByDefault" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="high_touch_polling_rate_enable"

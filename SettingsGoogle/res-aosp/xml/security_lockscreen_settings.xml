@@ -82,9 +82,9 @@
             settings:keywords="@string/keywords_always_show_time_info"
             settings:userRestriction="no_ambient_display" />
 
-        <Preference
+        <com.android.settingslib.PrimarySwitchPreference
             android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
-            android:key="ambient_display_tap"
+            android:key="gesture_tap"
             android:title="@string/ambient_display_tap_screen_title"
             settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController"
             settings:searchable="false" />
@@ -96,7 +96,7 @@
             settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController"
             settings:searchable="false" />
 
-        <Preference
+        <com.android.settingslib.PrimarySwitchPreference
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             android:key="ambient_display_pick_up"
             android:title="@string/ambient_display_pickup_title"

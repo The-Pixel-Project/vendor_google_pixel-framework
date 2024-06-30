@@ -123,6 +123,14 @@
             settings:controller="com.android.settings.network.telephony.Enhanced4gCallingPreferenceController"
             settings:keywords="@string/keywords_enhance_4g_lte" />
 
+        <SwitchPreferenceCompat
+            android:key="advance_call"
+            android:persistent="false"
+            android:summary="@string/enhanced_4g_lte_mode_summary"
+            android:title="@string/enhanced_4g_lte_mode_title_advanced_calling"
+            settings:controller="com.android.settings.network.telephony.Enhanced4gAdvancedCallingPreferenceController"
+            settings:keywords="@string/keywords_enhance_4g_lte" />
+            
         <SwitchPreference
             android:key="nr_advanced_calling"
             android:persistent="false"
@@ -131,13 +139,12 @@
             settings:controller="com.android.settings.network.telephony.NrAdvancedCallingPreferenceController"
             settings:keywords="@string/keywords_nr_advanced_calling" />
 
-        <SwitchPreferenceCompat
-            android:key="advance_call"
+       <SwitchPreferenceCompat
+            android:key="smart_5g"
+            android:title="@string/smart_5g_title"
             android:persistent="false"
-            android:summary="@string/enhanced_4g_lte_mode_summary"
-            android:title="@string/enhanced_4g_lte_mode_title_advanced_calling"
-            settings:controller="com.android.settings.network.telephony.Enhanced4gAdvancedCallingPreferenceController"
-            settings:keywords="@string/keywords_enhance_4g_lte" />
+            android:summary="@string/smart_5g_summary"
+            settings:controller="com.android.settings.network.telephony.Smart5gPreferenceController"/>
 
         <SwitchPreferenceCompat
             android:key="contact_discovery_opt_in"
@@ -255,6 +262,12 @@
                 android:key="auto_select_key"
                 android:title="@string/select_automatically"
                 settings:controller="com.android.settings.network.telephony.gsm.AutoSelectPreferenceController" />
+
+            <SwitchPreferenceCompat
+                android:key="force_lteca_key"
+                android:title="@string/force_lte_ca"
+                android:summary="@string/force_lte_ca_summary"
+                settings:controller="com.android.settings.network.telephony.ForceLteCaPreferenceController"/>
 
             <Preference
                 android:key="choose_network_key"

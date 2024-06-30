@@ -102,6 +102,16 @@
         android:title="@string/ringtone_title"
         settings:keywords="@string/sound_settings" />
 
+    <!-- Phone ringtone for Slot2 -->
+    <com.android.settings.DefaultRingtonePreference
+        android:key="ringtone2"
+        android:title="@string/ringtone_title"
+        android:dialogTitle="@string/ringtone_title"
+        android:summary="@string/summary_placeholder"
+        android:ringtoneType="ringtone"
+        settings:allowDividerAbove="false"
+        android:order="-119"/>
+
     <!-- Adaptive Playback -->
     <Preference
         android:key="sound_adaptive_playback_summary"
@@ -189,13 +199,6 @@
         android:title="@string/sound_work_settings"
         settings:controller="com.android.settings.notification.WorkSoundsPreferenceController" />
 
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:key="show_app_volume"
-        android:title="@string/app_volume_title"
-        android:summary="@string/app_volume_summary"
-        android:defaultValue="false"
-        android:order="-5"/>
-
     <SwitchPreferenceCompat
         android:key="dial_pad_tones"
         android:order="-50"
@@ -209,7 +212,7 @@
     <SwitchPreferenceCompat
         android:key="charging_sounds"
         android:order="-40"
-        android:title="@string/charging_sounds_custom_title" />
+        android:title="@string/charging_sounds_title" />
 
     <SwitchPreferenceCompat
         android:key="docking_sounds"
@@ -220,13 +223,6 @@
         android:key="touch_sounds"
         android:order="-30"
         android:title="@string/touch_sounds_title" />
-
-    <!-- Screenshot sound -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:key="screenshot_shutter_sound"
-        android:title="@string/screenshot_shutter_sound_title"
-        android:defaultValue="true"
-        android:order="-28"/>
 
     <SwitchPreferenceCompat
         android:key="vibrate_icon"
