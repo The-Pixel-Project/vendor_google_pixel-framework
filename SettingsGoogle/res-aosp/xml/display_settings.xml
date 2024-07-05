@@ -139,7 +139,7 @@
             android:defaultValue="true"/>
     </PreferenceCategory>
     
-    <PreferenceCategory
+    <!-- <PreferenceCategory
         android:title="@string/touch_category_title">
 
         <Preference
@@ -150,7 +150,7 @@
             settings:controller="com.google.android.settings.touch.TouchSensitivitySettingsPreferenceController"
             settings:keywords="@string/keywords_touch_sensitivity_settings" />
 
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
     <PreferenceCategory
         android:title="@string/category_name_display_controls">
