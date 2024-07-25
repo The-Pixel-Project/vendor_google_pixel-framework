@@ -177,11 +177,11 @@
             settings:keywords="@string/keywords_refresh_rate"
             settings:controller="com.android.settings.display.RefreshRatePreferenceController"/>
 
-        <SwitchPreferenceCompat
+        <!-- <SwitchPreferenceCompat
             android:key="peak_refresh_rate"
             android:summary="@string/peak_refresh_rate_summary"
             android:title="@string/peak_refresh_rate_title"
-            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
+            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" /> -->
 
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="display_cutout_hidden"
