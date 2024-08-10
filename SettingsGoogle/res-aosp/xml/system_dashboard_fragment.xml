@@ -56,6 +56,13 @@
         android:title="@string/gesture_preference_title"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
 
+    <Preference
+        android:title="@string/spoofing_title"
+        android:summary="@string/spoofing_summary"
+        android:icon="@drawable/ic_spoof"
+        android:order="-249"
+        android:fragment="com.android.settings.category.Spoof"/>
+        
     <!-- Button Settings
     <Preference
         android:key="button_settings"
